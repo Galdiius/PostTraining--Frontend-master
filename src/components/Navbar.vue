@@ -22,6 +22,10 @@
         <span>Sign in</span>
         <v-icon>mdi-login</v-icon>
       </v-btn>
+      <v-btn color="#548CA8" to="/register" class="white--text ml-2">
+        <span>Sign up</span>
+        <v-icon>mdi-register</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-navigation-drawer v-model="drawer"  color="#EEEEEE" app temporary>

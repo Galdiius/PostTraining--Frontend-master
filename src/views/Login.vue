@@ -13,7 +13,9 @@
 <script>
     import axios from 'axios'
     // const BASE_URL = 'https://bnitechshipservices.azurewebsites.net'
-    const BASE_URL = 'https://bnitechship1-gateway.azurewebsites.net'
+    // const BASE_URL = 'https://cors-anywhere.herokuapp.com/https://bnitechship1-gateway.azurewebsites.net/'
+    // const BASE_URL = 'https://bnitechship1-enrollment.azurewebsites.net/'
+    const BASE_URL = 'https://bnitechship1-enrollment.azurewebsites.net/';
     export default {
         name: 'Login',
         data(){
@@ -24,7 +26,7 @@
         },
         methods:{
             async login(){
-                await axios.post(BASE_URL+'/auth/Users/Authentication',{"username" : this.username,"password" : this.password})
+                await axios.post(BASE_URL+'auth/Users/Authentication',{"username" : this.username,"password" : this.password})
                 .then(function(r){
                     console.log(r);
                 })
